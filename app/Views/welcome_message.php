@@ -4,23 +4,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">
+				<?php foreach($berita as $b): ?>
 				<div class="card mb-3">
-					<img src="<?= base_url() ?>/img/photos/unsplash-1.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
+					<img src="<?= base_url() ?>/img/photos/<?= $b['img'] ?>" class="card-img-top" style="height: 200px; object-fit: cover;">
 					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<div class="card-title"><h2><?= $b['title'] ?></h2></div>
+						<p class="card-text"><?= substr($b['content'],0,200).'...'?></p>
+						<a href="#" class="btn btn-primary">Read More</a>
 					</div>
 				</div>
-				<div class="card mb-3">
-					<img src="<?= base_url() ?>/img/photos/unsplash-1.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
-
+				<?php endforeach ?>
 			</div>
 			<div class="col-lg-4">
 				<form class="d-flex" action="/" method="post">
@@ -31,9 +24,9 @@
 					<div class="card-body">
 						<h2 class="card-title">Categories</h2>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item"><a href="/" class="text-decoration-none"><b>Info Pendidikan</b></a></li>
-							<li class="list-group-item"><a href="/" class="text-decoration-none"><b>Pelajaran</b></a></li>
-							<li class="list-group-item"><a href="/" class="text-decoration-none"><b>Info Margaasih</b></a></li>
+							<?php foreach($kategori as $k): ?>
+							<li class="list-group-item"><a href="/" class="text-decoration-none"><b class="text-uppercase"><?= $k['title'] ?></b></a></li>
+							<?php endforeach ?>
 						</ul>
 					</div>
 				</div>
