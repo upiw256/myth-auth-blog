@@ -1,6 +1,6 @@
 <?= $this->extend('template/home/template'); ?>
 <?= $this->section('news') ?>
-<main class="flex-shrink-0 mt-5 mb-6">
+<main class="flex-shrink-0 mt-1 mb-6">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">

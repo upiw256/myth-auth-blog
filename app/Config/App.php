@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://app.sman1margaasih.sch.id:8050/';
+	public $baseURL = '';
 
 	/**
 	 * --------------------------------------------------------------------------
