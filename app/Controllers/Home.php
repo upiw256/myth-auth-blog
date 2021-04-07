@@ -20,4 +20,21 @@ class Home extends BaseController
 		];
 		return view('welcome_message', $data);
 	}
+	public function dapodik()
+	{
+		if (!session()->get('login')) {
+			redirect()->to('/');
+		}
+	}
+	public function login($link)
+	{
+		$nisn = $this->request->getVar('username');
+		$password = password_verify($this->request->getVar('password'), '$10$1YPSY/swET/arGCF3yaDlumsp1HYtd/Q4RoDBpFFXomapCzxw2HEu');
+		
+		$data=[
+			'link' => $link,
+		];
+		return view('login', $data);
+	}
+	
 }

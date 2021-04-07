@@ -37,6 +37,8 @@ $routes->get('/admin', 'Admin::index', ['filter' => 'role:admin']);
 $routes->get('/admin/index', 'Admin::index', ['filter' => 'role:admin']);
 $routes->get('/admin/user', 'Admin::user', ['filter' => 'role:admin']);
 $routes->post('/admin/user', 'Admin::regist', ['filter' => 'role:admin']);
+$routes->post('/login/dapodik', 'Home::login');
+
 
 /*
  * --------------------------------------------------------------------

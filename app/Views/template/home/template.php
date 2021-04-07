@@ -53,6 +53,18 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Galery</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Aplikasi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-white" href="/home/login/dapodik">Dapodik</a></li>
+                <li><a class="dropdown-item text-white" href="#">E-raport</a></li>
+                <li><a class="dropdown-item text-white" href="http://app.sman1margaasih.sch.id:8000">Data Siswa</a></li>
+                <li><a class="dropdown-item text-white" href="#">Jadwal</a></li>
+                <li><a class="dropdown-item text-white" href="#">Forum</a></li>
+              </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kontak</a>
             </li>
@@ -82,7 +94,7 @@
     });
     feed.run();
   </script>
-<script src="<?= base_url() ?>/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="<?= base_url() ?>/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
