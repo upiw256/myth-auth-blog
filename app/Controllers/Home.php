@@ -20,6 +20,7 @@ class Home extends BaseController
 			'title'=>'Home',
 			'berita'=>$this->berita->findAll(),
 			'kategori'=>$this->kategori->findAll(),
+			'login'=>FALSE
 		];
 		return view('welcome_message', $data);
 	}
@@ -31,6 +32,9 @@ class Home extends BaseController
 	}
 	public function login($link="")
 	{
+		if(session()->get('login')){
+            return redirect()->to('/home'.'/'.$link); 
+		}
 		if ($link==="") {
 			return redirect()->to('/');
 		}
@@ -42,6 +46,7 @@ class Home extends BaseController
 	}
 	public function atempLogin($to="")
 	{
+		
 		$username = $this->request->getVar('username');
 		$password = sha1(md5($this->request->getVar('password')));
 		$link = $this->user->Where(['username'=>$username, 'password'=>$password])->first();
@@ -66,13 +71,16 @@ class Home extends BaseController
 	{
 		if(!session()->get('login')){
             return redirect()->to('/'); 
-        }
+		}
+		
 		$data=[
 			'title'=>'Home',
 			'kategori'=>$this->kategori->findAll(),
+			'login'=> session()->get('login')
 		];
 		return view('jadwal', $data);
 	}
+	
 	public function logout()
     {
         $session = session();

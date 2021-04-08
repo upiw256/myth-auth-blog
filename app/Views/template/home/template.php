@@ -68,9 +68,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Kontak</a>
             </li>
-            <li class="nav-item mx-5 bg-danger">
-              <a class="nav-link text-white" href="#">Logout</a>
-            </li>
+            <?php if ($login) { ?>
+              <li class="nav-item mx-5 bg-danger">
+                <a class="nav-link text-white" href="/home/logout">Logout</a>
+              </li>
+            <?php } ?>
+            
           </ul>
         </div>
       </div>
