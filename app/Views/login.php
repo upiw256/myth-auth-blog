@@ -17,7 +17,7 @@
                 </div>
                 <h2 class="text-center">Login App <?= $link ?> </h2>
                 <div class="card-body">
-                <form>
+                <form action="/home/atempLogin/<?= $link ?>" method="post">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">User Name</label>
                         <input type="text" class="form-control" name="username">

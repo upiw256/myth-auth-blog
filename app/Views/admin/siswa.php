@@ -9,29 +9,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            <i class="align-middle" data-feather="plus-square"></i> Tambah <?= $aktiv ?>
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Tambah <?= $aktiv ?></h5>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <a href="#" class="btn btn-primary"><i class="align-middle" data-feather="refresh-cw"></i> Syncron <?= $aktiv ?> dari dapodik</a>
           <div class="card-body">
             <div class="table-responsive">
 

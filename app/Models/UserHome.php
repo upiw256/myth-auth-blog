@@ -6,6 +6,6 @@ use CodeIgniter\Model;
 
 class UserHome extends Model
 {
-	protected $table                = 'user_home';
+	protected $table                = 'siswa_view';
 	
 }

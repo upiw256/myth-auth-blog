@@ -63,6 +63,7 @@ class Admin extends BaseController
 	}
 	public function siswa()
 	{
+
 		$siswa = parent::siswa()['rows'];
 		//dd($siswa);
 		$data = [

@@ -58,15 +58,18 @@
                 Aplikasi
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-white" href="/home/login/dapodik">Dapodik</a></li>
+                <li><a class="dropdown-item text-white" href="#">Dapodik</a></li>
                 <li><a class="dropdown-item text-white" href="#">E-raport</a></li>
                 <li><a class="dropdown-item text-white" href="http://app.sman1margaasih.sch.id:8000">Data Siswa</a></li>
-                <li><a class="dropdown-item text-white" href="#">Jadwal</a></li>
+                <li><a class="dropdown-item text-white" href="/home/login/jadwal">Jadwal</a></li>
                 <li><a class="dropdown-item text-white" href="#">Forum</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kontak</a>
+            </li>
+            <li class="nav-item mx-5 bg-danger">
+              <a class="nav-link text-white" href="#">Logout</a>
             </li>
           </ul>
         </div>
